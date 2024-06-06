@@ -1,0 +1,86 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+}
+
+#toDoList {
+    background-color: white;
+    width: auto;
+    height: auto;
+    padding: 30px;
+    padding-top: 10px;
+    position: relative;
+    top: 70px;
+    border-radius: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#toDoList #input {
+    display: flex;
+    flex-direction: row;
+}
+
+
+#toDoList input {
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px solid rgb(181, 180, 180);
+    padding: 3px;
+    padding-left: 10px;
+}
+
+
+#toDoList #submitBtn {
+    margin-left: -30px;
+    border-radius: 20px;
+    border: 1px solid rgb(181, 180, 180);
+    background-color: rgb(255, 168, 6);
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+#toDoList #submitBtn:active {
+    background-color: white;
+    color: black;
+}
+
+
+#toDoList ul li {
+    overflow: hidden;
+    cursor: pointer;
+    margin-left: -40px;
+}
+
+#toDoList ul li.item {
+    text-decoration: line-through;
+}
+
+#remove {
+    border: none;
+    background-color: rgba(181, 180, 180, 0);
+    cursor: pointer;
+    transition: background-color 0.1s;
+    position: absolute;
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 50%;
+    right: 25px;
+}
+
+#remove:hover {
+    background-color: rgba(181, 180, 180, 0.942);
+}
