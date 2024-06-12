@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+div {
+    position: absolute;
+}
+
+.submitItem {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    transition: left 1s, top 1s;
+}
+
+.first-item {
+    background-color: orange;
+    position: absolute;
+    display: block;
+    width: 0px;
+    height: 0px;
+    margin-left: 0px;
+    transition: width 1s, height 1s;
+}
+
+.first-item.active {
+    height: 200px;
+    width: 200px;
+
+}
+
+.submitItem.active {
+    top: 200px;
+}
+
+
+.submitItem .close {
+    display: none;
+}
+
+.submitItem.active .close {
+    display: block;
+}
+
+.submitItem.active .expand {
+    display: none;
+}

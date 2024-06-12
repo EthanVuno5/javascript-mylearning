@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            list-style: decimal;
+        }
+
+        span {
+            margin-left: 30px;
+            font-size: 20px;
+            font-family: sans-serif;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+
+        #alert {
+            background-color: blue;
+            padding: 5px;
+            color: white;
+            width: 200px;
+            margin: 10px;
+            margin-left: 20px;
+            padding-left: 20px;
+            border-radius: 20px;
+            border-top-left-radius: 0px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="password" placeholder="password">
+    <button type="submit" onclick="genenrate()">Generate</button>
+    <button type="submit" onclick="save()">Save</button>
+    <button type="submit" onclick="copyPass()">Copy</button>
+
+    <div id="alert">Sorry please fill the input</div>
+
+    <ul id="listContainer">
+
+    </ul>
+    <script src="app.js"></script>
+</body>
+
+</html>
